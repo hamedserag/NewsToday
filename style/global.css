@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #FFFFFF;
+    --bgs: #f1f1f1;
+    --fg: #242323;
+    --fgs: #635959;
+    --head: #8C1018;
+}
+
+body {
+    background: var(--bg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--fgs);
+}
+
+footer {
+    background: var(--bgs);
+}
+
+.header {
+    font-family: 'Bebas Neue', cursive;
+    color: var(--head);
+}
+
+.header a {
+    color: inherit;
+}
+
+.article {
+    font-family: 'Roboto', sans-serif;
+    color: var(--fg);
+    font-size: 18px;
+}
+
+.date {
+    font-family: 'Roboto', sans-serif;
+    color: var(--fgs);
+    font-size: 14px;
+}
+
+.articleCard {
+    border-radius: 15px;
+    background: var(--bgs);
+}
+
+.countryLink {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--fg);
+    background: var(--bgs);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.textBreaker {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+
+/* Hover Events */
+
+.lordsBtn:hover {
+    padding-right: 30px;
+    border-radius: 25px 50px 50px 25px;
+    background: var(--head);
+    color: var(--bg);
+    transition: 0.5s;
+}
+
+.header:hover {
+    opacity: 0.75;
+    padding-left: 3px;
+    transition: 0.5s;
+}
